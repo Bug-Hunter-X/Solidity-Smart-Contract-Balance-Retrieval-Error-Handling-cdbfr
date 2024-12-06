@@ -1,0 +1,1 @@
+function getMyBalance() public view returns (uint256) {  uint256 balance;  assembly {    balance := balance(address(this))  }  return balance;} 
